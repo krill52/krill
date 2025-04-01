@@ -2,7 +2,7 @@
 while :
 do
   echo "Start updating bot"
-  git fetch krill https://github.com/krill52/krill
+  git pull krill main
   echo "Stop updating bot"
   echo "Start bot"
   node index.js
