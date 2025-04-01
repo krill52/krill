@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~/Krill
 while :
 do
   echo "Start updating bot"
