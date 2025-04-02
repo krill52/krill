@@ -1,5 +1,5 @@
 const fs = require('fs')
-const data = fs.readFileSync('~/Krill/token.json', 'utf-8')
+const data = fs.readFileSync('/home/raspberry/Krill/token.json', 'utf-8')
 
 const TelegramApi = require('node-telegram-bot-api')
 //const {mainMenu} = require('./options')
