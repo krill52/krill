@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/Krill
+cd /home/raspberry/Krill
 while :
 do
   echo "Start updating bot"
