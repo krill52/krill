@@ -1,4 +1,5 @@
-
+const fs = require('fs')
+const data = fs.readFileSync('token.json', 'utf-8')
 
 const TelegramApi = require('node-telegram-bot-api')
 //const {mainMenu} = require('./options')
@@ -6,7 +7,7 @@ const TelegramApi = require('node-telegram-bot-api')
 //const UserModel = require('./models');
 
 
-const token = "7801911891:AAG2T2VRKVlefoDDwvG8BDm_UoN6w3WKNZg";
+const token = JSON.parse(data).token
 
 const bot = new TelegramApi(token, {polling: true});
 
