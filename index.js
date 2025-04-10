@@ -85,6 +85,9 @@ const start = async () => { // heart of app
                 // });
                 process.exit(0)
             }
+            else if (text === "учеба") {
+                await reply("отчислено")
+            }
             else if (text === "ева" || text === "Ева" || text === "ЕВА" || text === "Света" ||
                 text === "света" || text === "СВЕТА") {
                 await send("трахать")
