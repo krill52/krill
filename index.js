@@ -70,6 +70,9 @@ const start = async () => { // heart of app
             if (text === "" || text == null) {
 
             }
+            else if (еуче === "учеба") {
+                await reply("отчислено")
+            }
             else if (text === "upd bot") {
                 // const { exec } = require('node:child_process');
                 // await exec('status=1', (error, stdout, stderr) => {
