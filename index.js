@@ -46,6 +46,10 @@ const reply = async (id, str) => { // get weather info for city ||| city store i
     await bot.sendMessage(-1002395139132, str, {reply_to_message_id: id});
 }
 
+const forward = async (id) => {
+    //await bot.forwardMessage(-1002395139132, 410819924, id)
+}
+
 const start = async () => { // heart of app
     /*try { // connecting to db
         await sequelize.authenticate()
@@ -64,14 +68,14 @@ const start = async () => { // heart of app
         const ido = msg.message_id;
         const tag = msg.from.username;
         //const user = await UserModel.findOne({where: {chatId: chatId}}) // simplification of reference to database
-        console.log(chatId, `name`, msg.from.first_name, `nick`, msg.from.username) // log with some ifo about user
+        console.log(chatId, `name`, msg.from.first_name, `nick`, msg.from.username, `msgid`, msg.message_id) // log with some ifo about user
         if (botPause) {}
         else {
             if (text === "" || text == null) {
                 //await send("52")
             }
             else if (text === "учеба") {
-                await reply(ido, "отчислено")
+                //await forward()
             }
             else if (text === "upd bot") {
                 // const { exec } = require('node:child_process');
