@@ -72,7 +72,7 @@ const start = async () => { // heart of app
         if (botPause) {}
         else {
             if (text === "" || text == null) {
-                await send("52")
+                //await send("52")
             }
             else if (text === "Учёба" || text === "учёба" || text === "Учеба" || text === "учеба") {
                 await forward(6)
