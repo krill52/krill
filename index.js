@@ -70,7 +70,7 @@ const start = async () => { // heart of app
             if (text === "" || text == null) {
 
             }
-            else if (еуче === "учеба") {
+            else if (text === "учеба") {
                 await reply("отчислено")
             }
             else if (text === "upd bot") {
