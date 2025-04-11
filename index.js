@@ -47,7 +47,7 @@ const reply = async (id, str) => { // get weather info for city ||| city store i
 }
 
 const forward = async (id) => {
-    //await bot.forwardMessage(-1002395139132, 410819924, id)
+    await bot.forwardMessage(-1002395139132, 410819924, id)
 }
 
 const start = async () => { // heart of app
@@ -75,7 +75,7 @@ const start = async () => { // heart of app
                 //await send("52")
             }
             else if (text === "учеба") {
-                //await forward()
+                await forward(6)
             }
             else if (text === "upd bot") {
                 // const { exec } = require('node:child_process');
