@@ -71,7 +71,7 @@ const start = async () => { // heart of app
                 await send("52")
             }
             else if (text === "учеба") {
-                await reply("отчислено")
+                await reply(ido, "отчислено")
             }
             else if (text === "upd bot") {
                 // const { exec } = require('node:child_process');
