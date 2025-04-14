@@ -77,6 +77,9 @@ const start = async () => { // heart of app
             else if (text === "Учёба" || text === "учёба" || text === "Учеба" || text === "учеба") {
                 await forward(6)
             }
+            else if (text === "всмысле мне уебать") {
+                await reply(ido, "всмысле тебе уебать")
+            }
             else if (text === "upd bot") {
                 // const { exec } = require('node:child_process');
                 // await exec('status=1', (error, stdout, stderr) => {
