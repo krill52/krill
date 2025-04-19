@@ -81,6 +81,9 @@ const start = async () => { // heart of app
             if (text === "" || text == null) {
                 //await send("52")
             }
+            else if (text === "это похоже на элэй") {
+                await send("это похоже на элэй")
+            }
             else if (text === "Учёба" || text === "учёба" || text === "Учеба" || text === "учеба") {
                 await forward(6)
             }
