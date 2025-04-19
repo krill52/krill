@@ -69,6 +69,13 @@ const start = async () => { // heart of app
         const tag = msg.from.username;
         //const user = await UserModel.findOne({where: {chatId: chatId}}) // simplification of reference to database
         console.log(chatId, `name`, msg.from.first_name, `nick`, msg.from.username, `msgid`, msg.message_id) // log with some ifo about user
+
+        const randomMess = await getRandomInt(11)
+        if (randomMess === 0) {
+            await send("это похоже на элэй")
+        }
+        
+        
         if (botPause) {}
         else {
             if (text === "" || text == null) {
