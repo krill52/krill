@@ -78,7 +78,7 @@ const start = async () => { // heart of app
             if (text === "" || text == null) {
                 //await send("52")
             }
-            else if (text === "христос воскрес" || "Христос воскрес" || "Христос Bоскрес" || "ХВ" || "хв") {
+            else if (text === "христос воскрес" || text === "Христос воскрес" || text === "Христос Bоскрес" || text === "ХВ" || text === "хв") {
                 await send("Воистину Воскрес")
             } 
             else if (text === "это похоже на элэй") {
