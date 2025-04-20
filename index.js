@@ -79,7 +79,7 @@ const start = async () => { // heart of app
                 //await send("52")
             }
             else if (text === "христос воскрес" || "Христос воскрес" || "Христос Bоскрес" || "ХВ" || "хв") {
-                await send("это похоже на элэй")
+                await send("Воистину Воскрес")
             } 
             else if (text === "это похоже на элэй") {
                 await send("это похоже на элэй")
@@ -308,7 +308,7 @@ const start = async () => { // heart of app
             // }
             //
             else {
-                const randomMess = await getRandomInt(5)
+                const randomMess = await getRandomInt(11)
                 if (randomMess === 0) {
                     await send("это похоже на элэй")
                 }
