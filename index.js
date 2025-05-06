@@ -308,7 +308,7 @@ const start = async () => { // heart of app
             // }
             //
             else {
-                const randomMess = await getRandomInt(11)
+                const randomMess = await getRandomInt(52)
                 if (randomMess === 0) {
                     await send("это похоже на элэй")
                 }
